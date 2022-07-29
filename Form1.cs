@@ -26,5 +26,25 @@ namespace PRG281_Project
         {
             cboPayment.Items.Add("Cash");
         }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
