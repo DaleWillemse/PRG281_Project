@@ -67,12 +67,10 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.pnlTotal = new System.Windows.Forms.Panel();
             this.lblTotalDisp = new System.Windows.Forms.Label();
-
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.pnlMenu.SuspendLayout();
@@ -221,6 +219,7 @@
             this.btnDrinks7.TabIndex = 17;
             this.btnDrinks7.Text = "Ice Tea can\r\nR15";
             this.btnDrinks7.UseVisualStyleBackColor = true;
+            this.btnDrinks7.Click += new System.EventHandler(this.btnDrinks7_Click);
             // 
             // btnDrinks8
             // 
@@ -231,6 +230,7 @@
             this.btnDrinks8.TabIndex = 16;
             this.btnDrinks8.Text = "Still water 330ml\r\nR5";
             this.btnDrinks8.UseVisualStyleBackColor = true;
+            this.btnDrinks8.Click += new System.EventHandler(this.btnDrinks8_Click);
             // 
             // btnDrinks9
             // 
@@ -241,6 +241,7 @@
             this.btnDrinks9.TabIndex = 15;
             this.btnDrinks9.Text = "Still water 500ml\r\nR10";
             this.btnDrinks9.UseVisualStyleBackColor = true;
+            this.btnDrinks9.Click += new System.EventHandler(this.btnDrinks9_Click);
             // 
             // btnDrinks10
             // 
@@ -251,6 +252,7 @@
             this.btnDrinks10.TabIndex = 14;
             this.btnDrinks10.Text = "Sparkling water \r\nR15";
             this.btnDrinks10.UseVisualStyleBackColor = true;
+            this.btnDrinks10.Click += new System.EventHandler(this.btnDrinks10_Click);
             // 
             // btnDrinks3
             // 
@@ -261,6 +263,7 @@
             this.btnDrinks3.TabIndex = 13;
             this.btnDrinks3.Text = "Cooldrink bottle\r\nR20";
             this.btnDrinks3.UseVisualStyleBackColor = true;
+            this.btnDrinks3.Click += new System.EventHandler(this.btnDrinks3_Click);
             // 
             // btnDrinks4
             // 
@@ -271,6 +274,7 @@
             this.btnDrinks4.TabIndex = 12;
             this.btnDrinks4.Text = "Cooldrink can\r\nR15";
             this.btnDrinks4.UseVisualStyleBackColor = true;
+            this.btnDrinks4.Click += new System.EventHandler(this.btnDrinks4_Click);
             // 
             // btnDrinks5
             // 
@@ -281,6 +285,7 @@
             this.btnDrinks5.TabIndex = 11;
             this.btnDrinks5.Text = "Flavoured water\r\nR15";
             this.btnDrinks5.UseVisualStyleBackColor = true;
+            this.btnDrinks5.Click += new System.EventHandler(this.btnDrinks5_Click);
             // 
             // btnDrinks2
             // 
@@ -302,6 +307,7 @@
             this.btnDrinks6.TabIndex = 9;
             this.btnDrinks6.Text = "Ice Tea bottle\r\nR20";
             this.btnDrinks6.UseVisualStyleBackColor = true;
+            this.btnDrinks6.Click += new System.EventHandler(this.btnDrinks6_Click);
             // 
             // btnDrinks1
             // 
@@ -493,7 +499,6 @@
             this.lblTotalDisp.Size = new System.Drawing.Size(180, 25);
             this.lblTotalDisp.TabIndex = 6;
             // 
-
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -548,7 +553,6 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // Form1

@@ -132,5 +132,69 @@ namespace PRG281_Project
             
 
         }
+
+        private void btnDrinks3_Click(object sender, EventArgs e)
+        {
+            string name = "Cooldrink Bottle";
+            int quantity = 1;
+            int amount = 20;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks4_Click(object sender, EventArgs e)
+        {
+            string name = "Cooldrink Can";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks5_Click(object sender, EventArgs e)
+        {
+            string name = "Flavoured Water";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks6_Click(object sender, EventArgs e)
+        {
+            string name = "Ice Tea Bottle";
+            int quantity = 1;
+            int amount = 20;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks7_Click(object sender, EventArgs e)
+        {
+            string name = "Ice Tea Can";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks8_Click(object sender, EventArgs e)
+        {
+            string name = "Still Water 330ml";
+            int quantity = 1;
+            int amount = 5;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks9_Click(object sender, EventArgs e)
+        {
+            string name = "Still Water 500ml";
+            int quantity = 1;
+            int amount = 10;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks10_Click(object sender, EventArgs e)
+        {
+            string name = "Sparkling Water 330ml";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
+        }
     }
 }
