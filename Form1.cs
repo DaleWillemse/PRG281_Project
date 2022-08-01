@@ -25,8 +25,8 @@ namespace PRG281_Project
         public void Form1_Load(object sender, EventArgs e)
         {
             cboPayment.Items.Add("Cash");
-            cboPayment.Items.Add("Credit Card");
-            cboPayment.Items.Add("Debit Card");
+            cboPayment.Items.Add("Master Card");
+            cboPayment.Items.Add("Visa Card");
         }
 
         private void btnPay_Click(object sender, EventArgs e)
