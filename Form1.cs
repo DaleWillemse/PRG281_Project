@@ -39,9 +39,10 @@ namespace PRG281_Project
             txtAmountPaid.Text = "";
             lblChangeDisp.Text = "";
             lblTotal.Text = "";
+            cboPayment.Text = "";
             dataGridView1.Rows.Clear();
             dataGridView1.Refresh();
-            cboPayment.Text = "";
+            
              
         }
 
