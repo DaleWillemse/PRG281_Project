@@ -64,10 +64,13 @@ namespace PRG281_Project
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
+
                     if (row.Cells[0].Value == item.Name)
                     {
-                        row.Cells[1].Value = item.Quantity + 1;
-                        row.Cells[2].Value = item.Amount + amount;
+                        int currentQty = Convert.ToInt32(row.Cells[1].Value);
+                        int currentAmount = Convert.ToInt32(row.Cells[2].Value);
+                        row.Cells[1].Value = currentQty + 1;
+                        row.Cells[2].Value = currentAmount + amount;
                         found = true;
                     }
 
