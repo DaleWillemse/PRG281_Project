@@ -67,12 +67,10 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.pnlTotal = new System.Windows.Forms.Panel();
             this.lblTotalDisp = new System.Windows.Forms.Label();
-
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.pnlMenu.SuspendLayout();
@@ -107,187 +105,180 @@
             this.pnlMenu.Controls.Add(this.btnDrinks1);
             this.pnlMenu.Controls.Add(this.lblSnacks);
             this.pnlMenu.Controls.Add(this.lblDrinks);
-            this.pnlMenu.Location = new System.Drawing.Point(11, 12);
+            this.pnlMenu.Location = new System.Drawing.Point(10, 9);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(841, 523);
+            this.pnlMenu.Size = new System.Drawing.Size(736, 393);
             this.pnlMenu.TabIndex = 0;
             // 
             // btnSnacks2
             // 
-            this.btnSnacks2.Location = new System.Drawing.Point(174, 307);
-            this.btnSnacks2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks2.Location = new System.Drawing.Point(152, 230);
             this.btnSnacks2.Name = "btnSnacks2";
-            this.btnSnacks2.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks2.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks2.TabIndex = 27;
             this.btnSnacks2.Text = "Doritos / Fritos\r\nR10";
             this.btnSnacks2.UseVisualStyleBackColor = true;
+            this.btnSnacks2.Click += new System.EventHandler(this.btnSnacks2_Click_1);
             // 
             // btnSnacks7
             // 
-            this.btnSnacks7.Location = new System.Drawing.Point(174, 408);
-            this.btnSnacks7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks7.Location = new System.Drawing.Point(152, 306);
             this.btnSnacks7.Name = "btnSnacks7";
-            this.btnSnacks7.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks7.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks7.TabIndex = 26;
             this.btnSnacks7.Text = "Jelly Tots Big\r\nR20";
             this.btnSnacks7.UseVisualStyleBackColor = true;
+            this.btnSnacks7.Click += new System.EventHandler(this.btnSnacks7_Click_1);
             // 
             // btnSnacks8
             // 
-            this.btnSnacks8.Location = new System.Drawing.Point(341, 408);
-            this.btnSnacks8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks8.Location = new System.Drawing.Point(298, 306);
             this.btnSnacks8.Name = "btnSnacks8";
-            this.btnSnacks8.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks8.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks8.TabIndex = 25;
             this.btnSnacks8.Text = "5 Star\r\nR15";
             this.btnSnacks8.UseVisualStyleBackColor = true;
+            this.btnSnacks8.Click += new System.EventHandler(this.btnSnacks8_Click_1);
             // 
             // btnSnacks9
             // 
-            this.btnSnacks9.Location = new System.Drawing.Point(507, 408);
-            this.btnSnacks9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks9.Location = new System.Drawing.Point(444, 306);
             this.btnSnacks9.Name = "btnSnacks9";
-            this.btnSnacks9.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks9.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks9.TabIndex = 24;
             this.btnSnacks9.Text = "Sour Punks\r\nR15";
             this.btnSnacks9.UseVisualStyleBackColor = true;
+            this.btnSnacks9.Click += new System.EventHandler(this.btnSnacks9_Click_1);
             // 
             // btnSnacks10
             // 
-            this.btnSnacks10.Location = new System.Drawing.Point(674, 408);
-            this.btnSnacks10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks10.Location = new System.Drawing.Point(590, 306);
             this.btnSnacks10.Name = "btnSnacks10";
-            this.btnSnacks10.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks10.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks10.TabIndex = 23;
-            this.btnSnacks10.Text = "Jelly Sweets - Assorted\r\nR10 - R15";
+            this.btnSnacks10.Text = "Jelly Sweets - Assorted\r\nR13";
             this.btnSnacks10.UseVisualStyleBackColor = true;
+            this.btnSnacks10.Click += new System.EventHandler(this.btnSnacks10_Click_1);
             // 
             // btnSnacks5
             // 
-            this.btnSnacks5.Location = new System.Drawing.Point(674, 307);
-            this.btnSnacks5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks5.Location = new System.Drawing.Point(590, 230);
             this.btnSnacks5.Name = "btnSnacks5";
-            this.btnSnacks5.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks5.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks5.TabIndex = 22;
             this.btnSnacks5.Text = "Good Morning Biscuits\r\nR10";
             this.btnSnacks5.UseVisualStyleBackColor = true;
+            this.btnSnacks5.Click += new System.EventHandler(this.btnSnacks5_Click_1);
             // 
             // btnSnacks4
             // 
-            this.btnSnacks4.Location = new System.Drawing.Point(507, 307);
-            this.btnSnacks4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks4.Location = new System.Drawing.Point(444, 230);
             this.btnSnacks4.Name = "btnSnacks4";
-            this.btnSnacks4.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks4.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks4.TabIndex = 21;
             this.btnSnacks4.Text = "Corn Nibs\r\nR5";
             this.btnSnacks4.UseVisualStyleBackColor = true;
+            this.btnSnacks4.Click += new System.EventHandler(this.btnSnacks4_Click);
             // 
             // btnSnacks3
             // 
-            this.btnSnacks3.Location = new System.Drawing.Point(341, 307);
-            this.btnSnacks3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks3.Location = new System.Drawing.Point(298, 230);
             this.btnSnacks3.Name = "btnSnacks3";
-            this.btnSnacks3.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks3.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks3.TabIndex = 20;
             this.btnSnacks3.Text = "Flings / Cheese Curls\r\nR5";
             this.btnSnacks3.UseVisualStyleBackColor = true;
+            this.btnSnacks3.Click += new System.EventHandler(this.btnSnacks3_Click_1);
             // 
             // btnSnacks6
             // 
-            this.btnSnacks6.Location = new System.Drawing.Point(7, 408);
-            this.btnSnacks6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks6.Location = new System.Drawing.Point(6, 306);
             this.btnSnacks6.Name = "btnSnacks6";
-            this.btnSnacks6.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks6.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks6.TabIndex = 19;
             this.btnSnacks6.Text = "Bar One 40g\r\nR15";
             this.btnSnacks6.UseVisualStyleBackColor = true;
+            this.btnSnacks6.Click += new System.EventHandler(this.btnSnacks6_Click_1);
             // 
             // btnSnacks1
             // 
-            this.btnSnacks1.Location = new System.Drawing.Point(7, 307);
-            this.btnSnacks1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSnacks1.Location = new System.Drawing.Point(6, 230);
             this.btnSnacks1.Name = "btnSnacks1";
-            this.btnSnacks1.Size = new System.Drawing.Size(160, 93);
+            this.btnSnacks1.Size = new System.Drawing.Size(140, 70);
             this.btnSnacks1.TabIndex = 18;
             this.btnSnacks1.Text = "Lays / Simba\r\nR10";
             this.btnSnacks1.UseVisualStyleBackColor = true;
+            this.btnSnacks1.Click += new System.EventHandler(this.btnSnacks1_Click);
             // 
             // btnDrinks7
             // 
-            this.btnDrinks7.Location = new System.Drawing.Point(174, 141);
-            this.btnDrinks7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks7.Location = new System.Drawing.Point(152, 106);
             this.btnDrinks7.Name = "btnDrinks7";
-            this.btnDrinks7.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks7.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks7.TabIndex = 17;
             this.btnDrinks7.Text = "Ice Tea can\r\nR15";
             this.btnDrinks7.UseVisualStyleBackColor = true;
             // 
             // btnDrinks8
             // 
-            this.btnDrinks8.Location = new System.Drawing.Point(341, 141);
-            this.btnDrinks8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks8.Location = new System.Drawing.Point(298, 106);
             this.btnDrinks8.Name = "btnDrinks8";
-            this.btnDrinks8.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks8.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks8.TabIndex = 16;
             this.btnDrinks8.Text = "Still water 330ml\r\nR5";
             this.btnDrinks8.UseVisualStyleBackColor = true;
             // 
             // btnDrinks9
             // 
-            this.btnDrinks9.Location = new System.Drawing.Point(507, 141);
-            this.btnDrinks9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks9.Location = new System.Drawing.Point(444, 106);
             this.btnDrinks9.Name = "btnDrinks9";
-            this.btnDrinks9.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks9.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks9.TabIndex = 15;
             this.btnDrinks9.Text = "Still water 500ml\r\nR10";
             this.btnDrinks9.UseVisualStyleBackColor = true;
             // 
             // btnDrinks10
             // 
-            this.btnDrinks10.Location = new System.Drawing.Point(674, 141);
-            this.btnDrinks10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks10.Location = new System.Drawing.Point(590, 106);
             this.btnDrinks10.Name = "btnDrinks10";
-            this.btnDrinks10.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks10.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks10.TabIndex = 14;
             this.btnDrinks10.Text = "Sparkling water \r\nR15";
             this.btnDrinks10.UseVisualStyleBackColor = true;
             // 
             // btnDrinks3
             // 
-            this.btnDrinks3.Location = new System.Drawing.Point(341, 40);
-            this.btnDrinks3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks3.Location = new System.Drawing.Point(298, 30);
             this.btnDrinks3.Name = "btnDrinks3";
-            this.btnDrinks3.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks3.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks3.TabIndex = 13;
             this.btnDrinks3.Text = "Cooldrink bottle\r\nR20";
             this.btnDrinks3.UseVisualStyleBackColor = true;
             // 
             // btnDrinks4
             // 
-            this.btnDrinks4.Location = new System.Drawing.Point(507, 40);
-            this.btnDrinks4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks4.Location = new System.Drawing.Point(444, 30);
             this.btnDrinks4.Name = "btnDrinks4";
-            this.btnDrinks4.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks4.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks4.TabIndex = 12;
             this.btnDrinks4.Text = "Cooldrink can\r\nR15";
             this.btnDrinks4.UseVisualStyleBackColor = true;
             // 
             // btnDrinks5
             // 
-            this.btnDrinks5.Location = new System.Drawing.Point(674, 40);
-            this.btnDrinks5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks5.Location = new System.Drawing.Point(590, 30);
             this.btnDrinks5.Name = "btnDrinks5";
-            this.btnDrinks5.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks5.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks5.TabIndex = 11;
             this.btnDrinks5.Text = "Flavoured water\r\nR15";
             this.btnDrinks5.UseVisualStyleBackColor = true;
             // 
             // btnDrinks2
             // 
-            this.btnDrinks2.Location = new System.Drawing.Point(174, 40);
-            this.btnDrinks2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks2.Location = new System.Drawing.Point(152, 30);
             this.btnDrinks2.Name = "btnDrinks2";
-            this.btnDrinks2.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks2.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks2.TabIndex = 10;
             this.btnDrinks2.Text = "Oros bottle \r\nR10";
             this.btnDrinks2.UseVisualStyleBackColor = true;
@@ -295,20 +286,18 @@
             // 
             // btnDrinks6
             // 
-            this.btnDrinks6.Location = new System.Drawing.Point(7, 141);
-            this.btnDrinks6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks6.Location = new System.Drawing.Point(6, 106);
             this.btnDrinks6.Name = "btnDrinks6";
-            this.btnDrinks6.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks6.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks6.TabIndex = 9;
             this.btnDrinks6.Text = "Ice Tea bottle\r\nR20";
             this.btnDrinks6.UseVisualStyleBackColor = true;
             // 
             // btnDrinks1
             // 
-            this.btnDrinks1.Location = new System.Drawing.Point(7, 40);
-            this.btnDrinks1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDrinks1.Location = new System.Drawing.Point(6, 30);
             this.btnDrinks1.Name = "btnDrinks1";
-            this.btnDrinks1.Size = new System.Drawing.Size(160, 93);
+            this.btnDrinks1.Size = new System.Drawing.Size(140, 70);
             this.btnDrinks1.TabIndex = 4;
             this.btnDrinks1.Text = "Appletizer can\r\nR25";
             this.btnDrinks1.UseVisualStyleBackColor = true;
@@ -318,9 +307,9 @@
             // 
             this.lblSnacks.AutoSize = true;
             this.lblSnacks.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSnacks.Location = new System.Drawing.Point(395, 267);
+            this.lblSnacks.Location = new System.Drawing.Point(346, 200);
             this.lblSnacks.Name = "lblSnacks";
-            this.lblSnacks.Size = new System.Drawing.Size(69, 25);
+            this.lblSnacks.Size = new System.Drawing.Size(53, 20);
             this.lblSnacks.TabIndex = 8;
             this.lblSnacks.Text = "Snacks";
             // 
@@ -328,9 +317,9 @@
             // 
             this.lblDrinks.AutoSize = true;
             this.lblDrinks.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDrinks.Location = new System.Drawing.Point(395, 0);
+            this.lblDrinks.Location = new System.Drawing.Point(346, 0);
             this.lblDrinks.Name = "lblDrinks";
-            this.lblDrinks.Size = new System.Drawing.Size(65, 25);
+            this.lblDrinks.Size = new System.Drawing.Size(50, 20);
             this.lblDrinks.TabIndex = 7;
             this.lblDrinks.Text = "Drinks";
             // 
@@ -341,17 +330,17 @@
             this.pnlButtons.Controls.Add(this.btnPrint);
             this.pnlButtons.Controls.Add(this.btnReset);
             this.pnlButtons.Controls.Add(this.btnPay);
-            this.pnlButtons.Location = new System.Drawing.Point(11, 557);
+            this.pnlButtons.Location = new System.Drawing.Point(10, 418);
+            this.pnlButtons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(841, 163);
+            this.pnlButtons.Size = new System.Drawing.Size(736, 123);
             this.pnlButtons.TabIndex = 2;
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(418, 81);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRemove.Location = new System.Drawing.Point(366, 61);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(415, 73);
+            this.btnRemove.Size = new System.Drawing.Size(363, 55);
             this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "Remove Item";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -359,10 +348,9 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(3, 81);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPrint.Location = new System.Drawing.Point(3, 61);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(415, 73);
+            this.btnPrint.Size = new System.Drawing.Size(363, 55);
             this.btnPrint.TabIndex = 2;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
@@ -370,10 +358,9 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(418, 4);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReset.Location = new System.Drawing.Point(366, 3);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(415, 73);
+            this.btnReset.Size = new System.Drawing.Size(363, 55);
             this.btnReset.TabIndex = 1;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -381,10 +368,9 @@
             // 
             // btnPay
             // 
-            this.btnPay.Location = new System.Drawing.Point(3, 4);
-            this.btnPay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPay.Location = new System.Drawing.Point(3, 3);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(415, 73);
+            this.btnPay.Size = new System.Drawing.Size(363, 55);
             this.btnPay.TabIndex = 0;
             this.btnPay.Text = "Pay";
             this.btnPay.UseVisualStyleBackColor = true;
@@ -399,9 +385,10 @@
             this.pnlPayment.Controls.Add(this.lblMoP);
             this.pnlPayment.Controls.Add(this.lblChange);
             this.pnlPayment.Controls.Add(this.lblAmtPaid);
-            this.pnlPayment.Location = new System.Drawing.Point(870, 557);
+            this.pnlPayment.Location = new System.Drawing.Point(761, 418);
+            this.pnlPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlPayment.Name = "pnlPayment";
-            this.pnlPayment.Size = new System.Drawing.Size(460, 163);
+            this.pnlPayment.Size = new System.Drawing.Size(403, 123);
             this.pnlPayment.TabIndex = 3;
             // 
             // cboPayment
@@ -409,9 +396,10 @@
             this.cboPayment.FormattingEnabled = true;
             this.cboPayment.Items.AddRange(new object[] {
             "Card"});
-            this.cboPayment.Location = new System.Drawing.Point(261, 28);
+            this.cboPayment.Location = new System.Drawing.Point(228, 21);
+            this.cboPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboPayment.Name = "cboPayment";
-            this.cboPayment.Size = new System.Drawing.Size(181, 28);
+            this.cboPayment.Size = new System.Drawing.Size(159, 23);
             this.cboPayment.TabIndex = 6;
             this.cboPayment.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -419,17 +407,18 @@
             // 
             this.lblChangeDisp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblChangeDisp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblChangeDisp.Location = new System.Drawing.Point(261, 115);
+            this.lblChangeDisp.Location = new System.Drawing.Point(228, 86);
             this.lblChangeDisp.Name = "lblChangeDisp";
-            this.lblChangeDisp.Size = new System.Drawing.Size(180, 25);
+            this.lblChangeDisp.Size = new System.Drawing.Size(158, 19);
             this.lblChangeDisp.TabIndex = 5;
             this.lblChangeDisp.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtAmountPaid
             // 
-            this.txtAmountPaid.Location = new System.Drawing.Point(261, 69);
+            this.txtAmountPaid.Location = new System.Drawing.Point(228, 52);
+            this.txtAmountPaid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAmountPaid.Name = "txtAmountPaid";
-            this.txtAmountPaid.Size = new System.Drawing.Size(181, 27);
+            this.txtAmountPaid.Size = new System.Drawing.Size(159, 23);
             this.txtAmountPaid.TabIndex = 4;
             this.txtAmountPaid.TextChanged += new System.EventHandler(this.txtAmountPaid_TextChanged);
             // 
@@ -437,9 +426,9 @@
             // 
             this.lblMoP.AutoSize = true;
             this.lblMoP.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMoP.Location = new System.Drawing.Point(16, 21);
+            this.lblMoP.Location = new System.Drawing.Point(14, 16);
             this.lblMoP.Name = "lblMoP";
-            this.lblMoP.Size = new System.Drawing.Size(215, 31);
+            this.lblMoP.Size = new System.Drawing.Size(177, 25);
             this.lblMoP.TabIndex = 3;
             this.lblMoP.Text = "Method of Payment";
             this.lblMoP.Click += new System.EventHandler(this.label4_Click);
@@ -448,9 +437,9 @@
             // 
             this.lblChange.AutoSize = true;
             this.lblChange.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblChange.Location = new System.Drawing.Point(16, 108);
+            this.lblChange.Location = new System.Drawing.Point(14, 81);
             this.lblChange.Name = "lblChange";
-            this.lblChange.Size = new System.Drawing.Size(92, 31);
+            this.lblChange.Size = new System.Drawing.Size(77, 25);
             this.lblChange.TabIndex = 2;
             this.lblChange.Text = "Change";
             // 
@@ -458,9 +447,9 @@
             // 
             this.lblAmtPaid.AutoSize = true;
             this.lblAmtPaid.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAmtPaid.Location = new System.Drawing.Point(16, 65);
+            this.lblAmtPaid.Location = new System.Drawing.Point(14, 49);
             this.lblAmtPaid.Name = "lblAmtPaid";
-            this.lblAmtPaid.Size = new System.Drawing.Size(146, 31);
+            this.lblAmtPaid.Size = new System.Drawing.Size(120, 25);
             this.lblAmtPaid.TabIndex = 1;
             this.lblAmtPaid.Text = "Amount Paid";
             // 
@@ -468,9 +457,9 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotal.Location = new System.Drawing.Point(30, 11);
+            this.lblTotal.Location = new System.Drawing.Point(26, 8);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(63, 31);
+            this.lblTotal.Size = new System.Drawing.Size(52, 25);
             this.lblTotal.TabIndex = 0;
             this.lblTotal.Text = "Total";
             // 
@@ -479,21 +468,21 @@
             this.pnlTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTotal.Controls.Add(this.lblTotalDisp);
             this.pnlTotal.Controls.Add(this.lblTotal);
-            this.pnlTotal.Location = new System.Drawing.Point(870, 479);
+            this.pnlTotal.Location = new System.Drawing.Point(761, 359);
+            this.pnlTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlTotal.Name = "pnlTotal";
-            this.pnlTotal.Size = new System.Drawing.Size(460, 55);
+            this.pnlTotal.Size = new System.Drawing.Size(403, 42);
             this.pnlTotal.TabIndex = 5;
             // 
             // lblTotalDisp
             // 
             this.lblTotalDisp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTotalDisp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTotalDisp.Location = new System.Drawing.Point(153, 16);
+            this.lblTotalDisp.Location = new System.Drawing.Point(134, 12);
             this.lblTotalDisp.Name = "lblTotalDisp";
-            this.lblTotalDisp.Size = new System.Drawing.Size(180, 25);
+            this.lblTotalDisp.Size = new System.Drawing.Size(158, 19);
             this.lblTotalDisp.TabIndex = 6;
             // 
-
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -502,12 +491,11 @@
             this.colItem,
             this.colQuantity,
             this.colAmount});
-            this.dataGridView1.Location = new System.Drawing.Point(870, 12);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(761, 9);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(461, 460);
+            this.dataGridView1.Size = new System.Drawing.Size(403, 345);
             this.dataGridView1.TabIndex = 7;
             // 
             // colItem
@@ -548,20 +536,20 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
-
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1397, 801);
+            this.ClientSize = new System.Drawing.Size(1199, 562);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnlTotal);
             this.Controls.Add(this.pnlPayment);
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.pnlMenu);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Sales";
             this.Load += new System.EventHandler(this.Form1_Load);
