@@ -25,6 +25,8 @@ namespace PRG281_Project
         public void Form1_Load(object sender, EventArgs e)
         {
             cboPayment.Items.Add("Cash");
+            cboPayment.Items.Add("Credit Card");
+            cboPayment.Items.Add("Debit Card");
         }
 
         private void btnPay_Click(object sender, EventArgs e)
@@ -34,6 +36,12 @@ namespace PRG281_Project
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            txtAmountPaid.Text = "";
+            lblChangeDisp.Text = "";
+            lblTotal.Text = "";
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
+            cboPayment.Text = "";
 
         }
 
@@ -119,6 +127,11 @@ namespace PRG281_Project
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawImage(bitmap, 0, 0);
+        }
+
+        private void txtAmountPaid_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

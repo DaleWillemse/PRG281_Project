@@ -60,7 +60,7 @@
             this.pnlPayment = new System.Windows.Forms.Panel();
             this.cboPayment = new System.Windows.Forms.ComboBox();
             this.lblChangeDisp = new System.Windows.Forms.Label();
-            this.txtCost = new System.Windows.Forms.TextBox();
+            this.txtAmountPaid = new System.Windows.Forms.TextBox();
             this.lblMoP = new System.Windows.Forms.Label();
             this.lblChange = new System.Windows.Forms.Label();
             this.lblAmtPaid = new System.Windows.Forms.Label();
@@ -393,7 +393,7 @@
             this.pnlPayment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPayment.Controls.Add(this.cboPayment);
             this.pnlPayment.Controls.Add(this.lblChangeDisp);
-            this.pnlPayment.Controls.Add(this.txtCost);
+            this.pnlPayment.Controls.Add(this.txtAmountPaid);
             this.pnlPayment.Controls.Add(this.lblMoP);
             this.pnlPayment.Controls.Add(this.lblChange);
             this.pnlPayment.Controls.Add(this.lblAmtPaid);
@@ -423,12 +423,13 @@
             this.lblChangeDisp.TabIndex = 5;
             this.lblChangeDisp.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtCost
+            // txtAmountPaid
             // 
-            this.txtCost.Location = new System.Drawing.Point(261, 69);
-            this.txtCost.Name = "txtCost";
-            this.txtCost.Size = new System.Drawing.Size(181, 27);
-            this.txtCost.TabIndex = 4;
+            this.txtAmountPaid.Location = new System.Drawing.Point(261, 69);
+            this.txtAmountPaid.Name = "txtAmountPaid";
+            this.txtAmountPaid.Size = new System.Drawing.Size(181, 27);
+            this.txtAmountPaid.TabIndex = 4;
+            this.txtAmountPaid.TextChanged += new System.EventHandler(this.txtAmountPaid_TextChanged);
             // 
             // lblMoP
             // 
@@ -582,7 +583,7 @@
         private Label lblAmtPaid;
         private Label lblTotal;
         private Label lblChangeDisp;
-        private TextBox txtCost;
+        private TextBox txtAmountPaid;
         private Panel pnlTotal;
         private ComboBox cboPayment;
         private Label lblTotalDisp;
