@@ -67,10 +67,12 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.pnlTotal = new System.Windows.Forms.Panel();
             this.lblTotalDisp = new System.Windows.Forms.Label();
+
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.pnlMenu.SuspendLayout();
@@ -491,6 +493,7 @@
             this.lblTotalDisp.Size = new System.Drawing.Size(180, 25);
             this.lblTotalDisp.TabIndex = 6;
             // 
+
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -545,6 +548,7 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // Form1
@@ -613,10 +617,12 @@
         private Button btnDrinks1;
         private Label lblSnacks;
         private Label lblDrinks;
+
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn colItem;
         private DataGridViewTextBoxColumn colQuantity;
         private DataGridViewTextBoxColumn colAmount;
+
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintPreviewDialog printPreviewDialog1;
     }

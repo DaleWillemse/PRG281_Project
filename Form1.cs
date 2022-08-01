@@ -25,6 +25,7 @@ namespace PRG281_Project
         public void Form1_Load(object sender, EventArgs e)
         {
             cboPayment.Items.Add("Cash");
+
             cboPayment.Items.Add("Master Card");
             cboPayment.Items.Add("Visa Card");
         }
@@ -42,10 +43,7 @@ namespace PRG281_Project
             cboPayment.Text = "";
             dataGridView1.Rows.Clear();
             dataGridView1.Refresh();
-            
-             
         }
-
         Bitmap bitmap;
         private void btnPrint_Click(object sender, EventArgs e)
         {
@@ -62,7 +60,7 @@ namespace PRG281_Project
         {
 
         }
-
+        
         /* 
          * Method for adding items to a list of class "Items".
          * Displays item name, quantity and total cost in dataGridView1.
@@ -92,7 +90,6 @@ namespace PRG281_Project
                         row.Cells[2].Value = currentAmount + amount;
                         found = true;
                     }
-
                 }
                 if (found == false)
                 {
@@ -111,7 +108,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
 
         }
-
+        
         private void btnDrinks2_Click(object sender, EventArgs e)
         {
             string name = "Oros Bottle";
@@ -133,6 +130,7 @@ namespace PRG281_Project
         private void txtAmountPaid_TextChanged(object sender, EventArgs e)
         {
             
+
         }
     }
 }

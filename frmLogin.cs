@@ -24,5 +24,12 @@ namespace PRG281_Project
             f2.ShowDialog();
             this.Close();
         }
+
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
