@@ -47,7 +47,10 @@ namespace PRG281_Project
 
         }
 
-        // Method for adding items to a list.
+        /* 
+         * Method for adding items to a list of class "Items".
+         * Displays item name, quantity and total cost in dataGridView1.
+         */
         public void AddItem(string name, int quantity, int amount)
         {
             List<Items> itemsList = new List<Items>();
