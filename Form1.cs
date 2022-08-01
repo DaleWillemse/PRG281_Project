@@ -42,7 +42,7 @@ namespace PRG281_Project
             dataGridView1.Rows.Clear();
             dataGridView1.Refresh();
             cboPayment.Text = "";
-
+             
         }
 
         Bitmap bitmap;
