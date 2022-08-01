@@ -68,11 +68,11 @@
             this.pnlTotal = new System.Windows.Forms.Panel();
             this.lblTotalDisp = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.pnlMenu.SuspendLayout();
             this.pnlButtons.SuspendLayout();
             this.pnlPayment.SuspendLayout();
@@ -506,30 +506,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(403, 345);
             this.dataGridView1.TabIndex = 7;
             // 
-            // colItem
-            // 
-            this.colItem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colItem.HeaderText = "Items";
-            this.colItem.MinimumWidth = 6;
-            this.colItem.Name = "colItem";
-            this.colItem.ReadOnly = true;
-            // 
-            // colQuantity
-            // 
-            this.colQuantity.HeaderText = "Quantity";
-            this.colQuantity.MinimumWidth = 6;
-            this.colQuantity.Name = "colQuantity";
-            this.colQuantity.ReadOnly = true;
-            this.colQuantity.Width = 125;
-            // 
-            // colAmount
-            // 
-            this.colAmount.HeaderText = "Amount";
-            this.colAmount.MinimumWidth = 6;
-            this.colAmount.Name = "colAmount";
-            this.colAmount.ReadOnly = true;
-            this.colAmount.Width = 125;
-            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
@@ -545,6 +521,30 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
+            // 
+            // colItem
+            // 
+            this.colItem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colItem.HeaderText = "Items";
+            this.colItem.MinimumWidth = 6;
+            this.colItem.Name = "colItem";
+            this.colItem.ReadOnly = true;
+            // 
+            // colQuantity
+            // 
+            this.colQuantity.HeaderText = "Quantity";
+            this.colQuantity.MinimumWidth = 6;
+            this.colQuantity.Name = "colQuantity";
+            this.colQuantity.ReadOnly = true;
+            this.colQuantity.Width = 75;
+            // 
+            // colAmount
+            // 
+            this.colAmount.HeaderText = "Amount";
+            this.colAmount.MinimumWidth = 6;
+            this.colAmount.Name = "colAmount";
+            this.colAmount.ReadOnly = true;
+            this.colAmount.Width = 75;
             // 
             // Form1
             // 
@@ -615,11 +615,11 @@
         private Label lblDrinks;
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn colItem;
-        private DataGridViewTextBoxColumn colQuantity;
-        private DataGridViewTextBoxColumn colAmount;
 
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintPreviewDialog printPreviewDialog1;
+        private DataGridViewTextBoxColumn colItem;
+        private DataGridViewTextBoxColumn colQuantity;
+        private DataGridViewTextBoxColumn colAmount;
     }
 }

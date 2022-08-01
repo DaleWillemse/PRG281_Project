@@ -179,7 +179,9 @@ namespace PRG281_Project
         private void btnDrinks3_Click(object sender, EventArgs e)
         {
             string name = "Cooldrink Bottle";
-
+            int quantity = 1;
+            int amount = 20;
+            AddItem(name, quantity, amount);
         }
 
         private void btnSnacks7_Click_1(object sender, EventArgs e)
@@ -193,6 +195,9 @@ namespace PRG281_Project
         private void btnDrinks4_Click(object sender, EventArgs e)
         {
             string name = "Cooldrink Can";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
         }
         private void btnSnacks8_Click_1(object sender, EventArgs e)
         {
@@ -201,7 +206,6 @@ namespace PRG281_Project
             int amount = 15;
             AddItem(name, quantity, amount);
         }
-
 
         private void btnDrinks5_Click(object sender, EventArgs e)
         {
@@ -222,6 +226,9 @@ namespace PRG281_Project
         private void btnDrinks7_Click(object sender, EventArgs e)
         {
             string name = "Ice Tea Can";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
         }
         private void btnSnacks9_Click_1(object sender, EventArgs e)
         {
