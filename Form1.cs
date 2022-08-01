@@ -25,7 +25,6 @@ namespace PRG281_Project
         public void Form1_Load(object sender, EventArgs e)
         {
             cboPayment.Items.Add("Cash");
-
             cboPayment.Items.Add("Master Card");
             cboPayment.Items.Add("Visa Card");
         }
@@ -100,6 +99,21 @@ namespace PRG281_Project
                 }
             }
         }
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bitmap, 0, 0);
+        }
+
+        private void txtAmountPaid_TextChanged(object sender, EventArgs e)
+        {
+            
+
+        }
         private void btnDrinks1_Click(object sender, EventArgs e)
         {
             string name = "Appletizer";
@@ -117,25 +131,60 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
-        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        private void btnSnacks1_Click(object sender, EventArgs e)
         {
-
+            string name = "Lays / Simba";
+            int quantity = 1;
+            int amount = 10;
+            AddItem(name, quantity, amount);
+        }
+        private void btnSnacks2_Click_1(object sender, EventArgs e)
+        {
+            string name = "Doritos / Fritos";
+            int quantity = 1;
+            int amount = 10;
+            AddItem(name, quantity, amount);
+        }
+        private void btnSnacks3_Click_1(object sender, EventArgs e)
+        {
+            string name = "Flings / Cheese Curls";
+            int quantity = 1;
+            int amount = 5;
+            AddItem(name, quantity, amount);
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        private void btnSnacks4_Click(object sender, EventArgs e)
         {
-            e.Graphics.DrawImage(bitmap, 0, 0);
+            string name = "Corn Nibs";
+            int quantity = 1;
+            int amount = 5;
+            AddItem(name, quantity, amount);
+        }
+        private void btnSnacks5_Click_1(object sender, EventArgs e)
+        {
+            string name = "Good Morning Biscuits";
+            int quantity = 1;
+            int amount = 10;
+            AddItem(name, quantity, amount);
+        }
+        private void btnSnacks6_Click_1(object sender, EventArgs e)
+        {
+            string name = "Bar One 40g";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
         }
 
-        private void txtAmountPaid_TextChanged(object sender, EventArgs e)
-        {
-            
-
-        }
 
         private void btnDrinks3_Click(object sender, EventArgs e)
         {
             string name = "Cooldrink Bottle";
+
+        }
+
+        private void btnSnacks7_Click_1(object sender, EventArgs e)
+        {
+            string name = "Jelly Tots Big";
             int quantity = 1;
             int amount = 20;
             AddItem(name, quantity, amount);
@@ -144,10 +193,15 @@ namespace PRG281_Project
         private void btnDrinks4_Click(object sender, EventArgs e)
         {
             string name = "Cooldrink Can";
+        }
+        private void btnSnacks8_Click_1(object sender, EventArgs e)
+        {
+            string name = "5 Star";
             int quantity = 1;
             int amount = 15;
             AddItem(name, quantity, amount);
         }
+
 
         private void btnDrinks5_Click(object sender, EventArgs e)
         {
@@ -168,6 +222,10 @@ namespace PRG281_Project
         private void btnDrinks7_Click(object sender, EventArgs e)
         {
             string name = "Ice Tea Can";
+        }
+        private void btnSnacks9_Click_1(object sender, EventArgs e)
+        {
+            string name = "Sour Punks";
             int quantity = 1;
             int amount = 15;
             AddItem(name, quantity, amount);
@@ -196,5 +254,13 @@ namespace PRG281_Project
             int amount = 15;
             AddItem(name, quantity, amount);
         }
+        private void btnSnacks10_Click_1(object sender, EventArgs e)
+        {
+            string name = "Jelly Sweets Assorted";
+            int quantity = 1;
+            int amount = 13;
+            AddItem(name, quantity, amount);
+        }
+
     }
 }
