@@ -60,24 +60,26 @@
             this.pnlPayment = new System.Windows.Forms.Panel();
             this.cboPayment = new System.Windows.Forms.ComboBox();
             this.lblChangeDisp = new System.Windows.Forms.Label();
-            this.txtCost = new System.Windows.Forms.TextBox();
+            this.txtAmountPaid = new System.Windows.Forms.TextBox();
             this.lblMoP = new System.Windows.Forms.Label();
             this.lblChange = new System.Windows.Forms.Label();
             this.lblAmtPaid = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTotal = new System.Windows.Forms.Panel();
             this.lblTotalDisp = new System.Windows.Forms.Label();
+
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.pnlMenu.SuspendLayout();
             this.pnlButtons.SuspendLayout();
             this.pnlPayment.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlTotal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -289,6 +291,7 @@
             this.btnDrinks2.TabIndex = 10;
             this.btnDrinks2.Text = "Oros bottle \r\nR10";
             this.btnDrinks2.UseVisualStyleBackColor = true;
+            this.btnDrinks2.Click += new System.EventHandler(this.btnDrinks2_Click);
             // 
             // btnDrinks6
             // 
@@ -309,6 +312,7 @@
             this.btnDrinks1.TabIndex = 4;
             this.btnDrinks1.Text = "Appletizer can\r\nR25";
             this.btnDrinks1.UseVisualStyleBackColor = true;
+            this.btnDrinks1.Click += new System.EventHandler(this.btnDrinks1_Click);
             // 
             // lblSnacks
             // 
@@ -391,7 +395,7 @@
             this.pnlPayment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPayment.Controls.Add(this.cboPayment);
             this.pnlPayment.Controls.Add(this.lblChangeDisp);
-            this.pnlPayment.Controls.Add(this.txtCost);
+            this.pnlPayment.Controls.Add(this.txtAmountPaid);
             this.pnlPayment.Controls.Add(this.lblMoP);
             this.pnlPayment.Controls.Add(this.lblChange);
             this.pnlPayment.Controls.Add(this.lblAmtPaid);
@@ -421,12 +425,13 @@
             this.lblChangeDisp.TabIndex = 5;
             this.lblChangeDisp.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txtCost
+            // txtAmountPaid
             // 
-            this.txtCost.Location = new System.Drawing.Point(261, 69);
-            this.txtCost.Name = "txtCost";
-            this.txtCost.Size = new System.Drawing.Size(181, 27);
-            this.txtCost.TabIndex = 4;
+            this.txtAmountPaid.Location = new System.Drawing.Point(261, 69);
+            this.txtAmountPaid.Name = "txtAmountPaid";
+            this.txtAmountPaid.Size = new System.Drawing.Size(181, 27);
+            this.txtAmountPaid.TabIndex = 4;
+            this.txtAmountPaid.TextChanged += new System.EventHandler(this.txtAmountPaid_TextChanged);
             // 
             // lblMoP
             // 
@@ -469,42 +474,6 @@
             this.lblTotal.TabIndex = 0;
             this.lblTotal.Text = "Total";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(870, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(459, 459);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Item";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Quantity";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Amount";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
             // pnlTotal
             // 
             this.pnlTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -524,6 +493,47 @@
             this.lblTotalDisp.Size = new System.Drawing.Size(180, 25);
             this.lblTotalDisp.TabIndex = 6;
             // 
+
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colItem,
+            this.colQuantity,
+            this.colAmount});
+            this.dataGridView1.Location = new System.Drawing.Point(870, 12);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(461, 460);
+            this.dataGridView1.TabIndex = 7;
+            // 
+            // colItem
+            // 
+            this.colItem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colItem.HeaderText = "Items";
+            this.colItem.MinimumWidth = 6;
+            this.colItem.Name = "colItem";
+            this.colItem.ReadOnly = true;
+            // 
+            // colQuantity
+            // 
+            this.colQuantity.HeaderText = "Quantity";
+            this.colQuantity.MinimumWidth = 6;
+            this.colQuantity.Name = "colQuantity";
+            this.colQuantity.ReadOnly = true;
+            this.colQuantity.Width = 125;
+            // 
+            // colAmount
+            // 
+            this.colAmount.HeaderText = "Amount";
+            this.colAmount.MinimumWidth = 6;
+            this.colAmount.Name = "colAmount";
+            this.colAmount.ReadOnly = true;
+            this.colAmount.Width = 125;
+            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
@@ -538,15 +548,17 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1342, 733);
-            this.Controls.Add(this.pnlTotal);
+            this.ClientSize = new System.Drawing.Size(1397, 801);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pnlTotal);
             this.Controls.Add(this.pnlPayment);
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.pnlMenu);
@@ -558,9 +570,9 @@
             this.pnlButtons.ResumeLayout(false);
             this.pnlPayment.ResumeLayout(false);
             this.pnlPayment.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlTotal.ResumeLayout(false);
             this.pnlTotal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -575,11 +587,7 @@
         private Label lblAmtPaid;
         private Label lblTotal;
         private Label lblChangeDisp;
-        private TextBox txtCost;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
+        private TextBox txtAmountPaid;
         private Panel pnlTotal;
         private ComboBox cboPayment;
         private Label lblTotalDisp;
@@ -609,6 +617,12 @@
         private Button btnDrinks1;
         private Label lblSnacks;
         private Label lblDrinks;
+
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn colItem;
+        private DataGridViewTextBoxColumn colQuantity;
+        private DataGridViewTextBoxColumn colAmount;
+
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintPreviewDialog printPreviewDialog1;
     }

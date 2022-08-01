@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -36,18 +37,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+
             this.SuspendLayout();
             // 
             // button1
             // 
+
             this.button1.Location = new System.Drawing.Point(408, 324);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 29);
+
             this.button1.TabIndex = 0;
             this.button1.Text = "show Sales";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -112,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.BackgroundImage = global::PRG281_Project.Properties.Resources.Belgium_campus_Tuckshop_bc_image_bigger;
             this.ClientSize = new System.Drawing.Size(512, 365);
             this.Controls.Add(this.panel1);
@@ -121,6 +127,7 @@
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+
             this.ResumeLayout(false);
 
         }
@@ -128,11 +135,13 @@
         #endregion
 
         private Button button1;
+
         private Panel panel1;
         private Button btnLogin;
         private TextBox txtPassword;
         private Label label2;
         private TextBox txtUsername;
         private Label label1;
+
     }
 }
