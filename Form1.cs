@@ -174,12 +174,25 @@ namespace PRG281_Project
             int amount = 15;
             AddItem(name, quantity, amount);
         }
+
+
+        private void btnDrinks3_Click(object sender, EventArgs e)
+        {
+            string name = "Cooldrink Bottle";
+
+        }
+
         private void btnSnacks7_Click_1(object sender, EventArgs e)
         {
             string name = "Jelly Tots Big";
             int quantity = 1;
             int amount = 20;
             AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks4_Click(object sender, EventArgs e)
+        {
+            string name = "Cooldrink Can";
         }
         private void btnSnacks8_Click_1(object sender, EventArgs e)
         {
@@ -188,9 +201,55 @@ namespace PRG281_Project
             int amount = 15;
             AddItem(name, quantity, amount);
         }
+
+
+        private void btnDrinks5_Click(object sender, EventArgs e)
+        {
+            string name = "Flavoured Water";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks6_Click(object sender, EventArgs e)
+        {
+            string name = "Ice Tea Bottle";
+            int quantity = 1;
+            int amount = 20;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks7_Click(object sender, EventArgs e)
+        {
+            string name = "Ice Tea Can";
+        }
         private void btnSnacks9_Click_1(object sender, EventArgs e)
         {
             string name = "Sour Punks";
+            int quantity = 1;
+            int amount = 15;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks8_Click(object sender, EventArgs e)
+        {
+            string name = "Still Water 330ml";
+            int quantity = 1;
+            int amount = 5;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks9_Click(object sender, EventArgs e)
+        {
+            string name = "Still Water 500ml";
+            int quantity = 1;
+            int amount = 10;
+            AddItem(name, quantity, amount);
+        }
+
+        private void btnDrinks10_Click(object sender, EventArgs e)
+        {
+            string name = "Sparkling Water 330ml";
             int quantity = 1;
             int amount = 15;
             AddItem(name, quantity, amount);
