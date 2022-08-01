@@ -31,7 +31,7 @@ namespace PRG281_Project
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnReset_Click(object sender, EventArgs e)
