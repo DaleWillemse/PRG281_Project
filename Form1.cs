@@ -61,9 +61,12 @@ namespace PRG281_Project
                             {
                                 int change = amtPaid - total;
                                 lblChangeDisp.Text = "R" + change.ToString();
-                                int i = dataGridView1.Rows.Add();
-                                dataGridView1.Rows[i].Cells[1].Value = "Total:";
-                                dataGridView1.Rows[i].Cells[2].Value = "R" + total.ToString();
+                                int h = dataGridView1.Rows.Add();
+                                dataGridView1.Rows[h].Cells[1].Value = "Total:";
+                                dataGridView1.Rows[h].Cells[2].Value = "R" + total.ToString();
+                                int g = dataGridView1.Rows.Add();
+                                dataGridView1.Rows[g].Cells[1].Value = "Pay method:";
+                                dataGridView1.Rows[g].Cells[2].Value = "Cash";
                                 int j = dataGridView1.Rows.Add();
                                 dataGridView1.Rows[j].Cells[1].Value = "Paid:";
                                 dataGridView1.Rows[j].Cells[2].Value = "R" + amtPaid.ToString();
@@ -82,6 +85,9 @@ namespace PRG281_Project
                         int n = dataGridView1.Rows.Add();
                         dataGridView1.Rows[n].Cells[1].Value = "Total:";
                         dataGridView1.Rows[n].Cells[2].Value = "R" + total.ToString();
+                        int i = dataGridView1.Rows.Add();
+                        dataGridView1.Rows[i].Cells[1].Value = "Pay method:";
+                        dataGridView1.Rows[i].Cells[2].Value = "Master Card";
                         break;
 
                     case 2:
@@ -91,6 +97,9 @@ namespace PRG281_Project
                         int l = dataGridView1.Rows.Add();
                         dataGridView1.Rows[l].Cells[1].Value = "Total:";
                         dataGridView1.Rows[l].Cells[2].Value = "R" + total.ToString();
+                        int m = dataGridView1.Rows.Add();
+                        dataGridView1.Rows[m].Cells[1].Value = "Pay method:";
+                        dataGridView1.Rows[m].Cells[2].Value = "Visa Card";
                         break;
                 }
 

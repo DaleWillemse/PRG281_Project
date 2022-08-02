@@ -592,7 +592,8 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colItem,
@@ -621,7 +622,7 @@
             this.colQuantity.MinimumWidth = 6;
             this.colQuantity.Name = "colQuantity";
             this.colQuantity.ReadOnly = true;
-            this.colQuantity.Width = 75;
+            this.colQuantity.Width = 94;
             // 
             // colAmount
             // 
@@ -629,7 +630,7 @@
             this.colAmount.MinimumWidth = 6;
             this.colAmount.Name = "colAmount";
             this.colAmount.ReadOnly = true;
-            this.colAmount.Width = 75;
+            this.colAmount.Width = 91;
             // 
             // panel1
             // 
