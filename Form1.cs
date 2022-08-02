@@ -112,6 +112,7 @@ namespace PRG281_Project
             {
                 int rowIndex = dataGridView1.CurrentCell.RowIndex;
                 dataGridView1.Rows.RemoveAt(rowIndex);
+                //total = total - Convert.ToInt32(dataGridView1.SelectedRows[rowIndex].Cells[2].Value);
             }
             else
             {
