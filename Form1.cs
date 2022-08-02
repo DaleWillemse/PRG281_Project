@@ -78,8 +78,6 @@ namespace PRG281_Project
                         break;
                 }
             }
-
-            
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -127,7 +125,7 @@ namespace PRG281_Project
                 MessageBox.Show("There is no item selected.");
             }
         }
-        
+
         /* 
          * Method for adding items to a list of class "Items".
          * Displays item name, quantity and total cost in dataGridView1.
@@ -151,7 +149,7 @@ namespace PRG281_Project
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    
+
                     if (row.Cells[0].Value == item.Name)
                     {
                         int currentQty = Convert.ToInt32(row.Cells[1].Value);
@@ -184,7 +182,7 @@ namespace PRG281_Project
 
         private void txtAmountPaid_TextChanged(object sender, EventArgs e)
         {
-            
+
 
         }
         private void btnDrinks1_Click(object sender, EventArgs e)
@@ -195,7 +193,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
 
         }
-        
+
         private void btnDrinks2_Click(object sender, EventArgs e)
         {
             string name = "Oros Bottle";
