@@ -361,7 +361,7 @@
             this.lblSnacks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSnacks.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSnacks.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblSnacks.Location = new System.Drawing.Point(343, 205);
+            this.lblSnacks.Location = new System.Drawing.Point(343, 204);
             this.lblSnacks.Name = "lblSnacks";
             this.lblSnacks.Size = new System.Drawing.Size(55, 22);
             this.lblSnacks.TabIndex = 8;
@@ -374,7 +374,7 @@
             this.lblDrinks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDrinks.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDrinks.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblDrinks.Location = new System.Drawing.Point(346, 12);
+            this.lblDrinks.Location = new System.Drawing.Point(346, 11);
             this.lblDrinks.Name = "lblDrinks";
             this.lblDrinks.Size = new System.Drawing.Size(52, 22);
             this.lblDrinks.TabIndex = 7;
