@@ -37,17 +37,30 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(422, 429);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 30);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "show Sales";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(131, 110);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 211);
+            this.panel1.Size = new System.Drawing.Size(228, 166);
             this.panel1.TabIndex = 1;
             // 
             // btnLogin
@@ -64,7 +77,8 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(35, 115);
+            this.txtPassword.Location = new System.Drawing.Point(31, 93);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(200, 27);
@@ -73,12 +87,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DimGray;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(35, 89);
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(69, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 23);
+            this.label2.Size = new System.Drawing.Size(86, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "PASSWORD:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtUsername
             // 
@@ -99,7 +117,7 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PRG281_Project.Properties.Resources.Belgium_campus_Tuckshop_bc_image_bigger;
             this.ClientSize = new System.Drawing.Size(516, 367);
@@ -114,11 +132,15 @@
         }
 
         #endregion
+
+        private Button button1;
+
         private Panel panel1;
         private Button btnLogin;
         private TextBox txtPassword;
         private Label label2;
         private TextBox txtUsername;
         private Label label1;
+
     }
 }
