@@ -2,6 +2,9 @@ namespace PRG281_Project
 {
     public partial class Form1 : Form
     {
+        int total = 0;
+        int amtPaid = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +34,51 @@ namespace PRG281_Project
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+            if (cboPayment.Text == "")
+            {
+                MessageBox.Show("Please choose a payment method.");
+            }
+            else
+            {
+                int paymethod = cboPayment.SelectedIndex;
+
+                switch (paymethod)
+                {
+                    case 0:
+                        if (txtAmountPaid.Text == "")
+                        {
+                            MessageBox.Show("Please enter the amount the customer paid");
+                        }
+                        else
+                        {
+                            amtPaid = Convert.ToInt32(txtAmountPaid.Text);
+                            if (amtPaid < total)
+                            {
+                                MessageBox.Show("Please pay correct amount!");
+                                txtAmountPaid.Text = "";
+                            }
+                            else if (amtPaid >= total)
+                            {
+                                int change = amtPaid - total;
+                                lblChangeDisp.Text = "R" + change.ToString();
+                            }
+                        }
+                        break;
+
+                    case 1:
+                        amtPaid = Convert.ToInt32(total);
+                        txtAmountPaid.Text = "R" + amtPaid.ToString();
+                        lblChangeDisp.Text = "R0.00";
+                        break;
+
+                    case 2:
+                        amtPaid = Convert.ToInt32(total);
+                        txtAmountPaid.Text = "R" + amtPaid.ToString();
+                        lblChangeDisp.Text = "R0.00";
+                        break;
+                }
+            }
+
             
         }
 
@@ -42,6 +90,9 @@ namespace PRG281_Project
             cboPayment.Text = "";
             dataGridView1.Rows.Clear();
             dataGridView1.Refresh();
+            lblTotalDisp.Text = "";
+            total = 0;
+            amtPaid = 0;
         }
         Bitmap bitmap;
         private void btnPrint_Click(object sender, EventArgs e)
@@ -57,7 +108,15 @@ namespace PRG281_Project
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-
+            if (dataGridView1.Rows.Count > 1 && dataGridView1.Rows != null)
+            {
+                int rowIndex = dataGridView1.CurrentCell.RowIndex;
+                dataGridView1.Rows.RemoveAt(rowIndex);
+            }
+            else
+            {
+                MessageBox.Show("There is no item selected.");
+            }
         }
         
         /* 
@@ -80,7 +139,7 @@ namespace PRG281_Project
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-
+                    
                     if (row.Cells[0].Value == item.Name)
                     {
                         int currentQty = Convert.ToInt32(row.Cells[1].Value);
@@ -90,6 +149,10 @@ namespace PRG281_Project
                         found = true;
                     }
                 }
+
+                total = total + amount;
+                lblTotalDisp.Text = "R" + total.ToString();
+
                 if (found == false)
                 {
                     int n = dataGridView1.Rows.Add();
