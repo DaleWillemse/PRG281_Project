@@ -61,7 +61,17 @@ namespace PRG281_Project
                             {
                                 int change = amtPaid - total;
                                 lblChangeDisp.Text = "R" + change.ToString();
+                                int i = dataGridView1.Rows.Add();
+                                dataGridView1.Rows[i].Cells[1].Value = "Total:";
+                                dataGridView1.Rows[i].Cells[2].Value = "R" + total.ToString();
+                                int j = dataGridView1.Rows.Add();
+                                dataGridView1.Rows[j].Cells[1].Value = "Paid:";
+                                dataGridView1.Rows[j].Cells[2].Value = "R" + amtPaid.ToString();
+                                int k = dataGridView1.Rows.Add();
+                                dataGridView1.Rows[k].Cells[1].Value = "Change:";
+                                dataGridView1.Rows[k].Cells[2].Value = lblChangeDisp.Text;
                             }
+
                         }
                         break;
 
@@ -69,14 +79,22 @@ namespace PRG281_Project
                         amtPaid = Convert.ToInt32(total);
                         txtAmountPaid.Text = "R" + amtPaid.ToString();
                         lblChangeDisp.Text = "R0.00";
+                        int n = dataGridView1.Rows.Add();
+                        dataGridView1.Rows[n].Cells[1].Value = "Total:";
+                        dataGridView1.Rows[n].Cells[2].Value = "R" + total.ToString();
                         break;
 
                     case 2:
                         amtPaid = Convert.ToInt32(total);
                         txtAmountPaid.Text = "R" + amtPaid.ToString();
                         lblChangeDisp.Text = "R0.00";
+                        int l = dataGridView1.Rows.Add();
+                        dataGridView1.Rows[l].Cells[1].Value = "Total:";
+                        dataGridView1.Rows[l].Cells[2].Value = "R" + total.ToString();
                         break;
                 }
+
+                
             }
         }
 
@@ -351,6 +369,11 @@ namespace PRG281_Project
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTotalDisp_Click(object sender, EventArgs e)
         {
 
         }
