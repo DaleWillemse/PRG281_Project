@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -37,16 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(408, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "show Sales";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -71,6 +60,7 @@
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
@@ -78,7 +68,6 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(200, 27);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "enter a password...";
             // 
             // label2
             // 
@@ -96,7 +85,6 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(200, 27);
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Text = "enter a username...";
             // 
             // label1
             // 
@@ -113,9 +101,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PRG281_Project.Properties.Resources.Belgium_campus_Tuckshop_bc_image_bigger;
-            this.ClientSize = new System.Drawing.Size(512, 365);
+            this.ClientSize = new System.Drawing.Size(516, 367);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
             this.Name = "frmLogin";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
@@ -126,8 +113,6 @@
         }
 
         #endregion
-
-        private Button button1;
         private Panel panel1;
         private Button btnLogin;
         private TextBox txtPassword;
