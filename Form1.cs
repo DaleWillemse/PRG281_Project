@@ -102,33 +102,20 @@ namespace PRG281_Project
                         dataGridView1.Rows[m].Cells[2].Value = "Visa Card";
                         break;
                 }
-
-                
             }
+            Print();
+            Reset();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            txtAmountPaid.Text = "";
-            lblChangeDisp.Text = "";
-            lblTotal.Text = "";
-            cboPayment.Text = "";
-            dataGridView1.Rows.Clear();
-            dataGridView1.Refresh();
-            lblTotalDisp.Text = "";
-            total = 0;
-            amtPaid = 0;
+            Reset();
         }
         Bitmap bitmap;
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            int height = dataGridView1.Height;
-            dataGridView1.Height = dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 2;
-            bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
-            dataGridView1.DrawToBitmap(bitmap, new Rectangle(0, 0, dataGridView1.Width, dataGridView1.Height));
-            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
-            printPreviewDialog1.ShowDialog();
-            dataGridView1.Height = height;
+            Print();
+            Reset();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -152,11 +139,34 @@ namespace PRG281_Project
                 MessageBox.Show("There is no item selected.");
             }
         }
+        // Method that prints whatever is in the dataGridView1.
+        public void Print()
+        {
+            int height = dataGridView1.Height;
+            dataGridView1.Height = dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 2;
+            bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
+            dataGridView1.DrawToBitmap(bitmap, new Rectangle(0, 0, dataGridView1.Width, dataGridView1.Height));
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
+            dataGridView1.Height = height;
+        }
 
-        /* 
-         * Method for adding items to a list of class "Items".
-         * Displays item name, quantity and total cost in dataGridView1.
-         */
+        // Method for reseting the entire order.
+        public void Reset()
+        {
+            txtAmountPaid.Text = "";
+            lblChangeDisp.Text = "";
+            lblTotal.Text = "";
+            cboPayment.Text = "";
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
+            lblTotalDisp.Text = "";
+            total = 0;
+            amtPaid = 0;
+        }
+
+        // Method for adding items to a list of class "Items".
+        // Displays item name, quantity and total cost in dataGridView1.
         public void AddItem(string name, int quantity, int amount)
         {
             List<Items> itemsList = new List<Items>();
@@ -365,16 +375,6 @@ namespace PRG281_Project
             int quantity = 1;
             int amount = 13;
             AddItem(name, quantity, amount);
-        }
-
-        private void pnlButtons_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
