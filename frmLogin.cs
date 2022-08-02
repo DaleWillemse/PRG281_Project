@@ -31,7 +31,10 @@ namespace PRG281_Project
         {
 
         }
+        private void label2_Click(object sender, EventArgs e)
+        {
 
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             IDictionary<string, string> userDetails = new Dictionary<string, string>();

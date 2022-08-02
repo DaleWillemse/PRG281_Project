@@ -4,7 +4,7 @@ namespace PRG281_Project
     {
         int total = 0;
         int amtPaid = 0;
-
+        bool paid = false;
         public Form1()
         {
             InitializeComponent();
@@ -73,6 +73,7 @@ namespace PRG281_Project
                                 int k = dataGridView1.Rows.Add();
                                 dataGridView1.Rows[k].Cells[1].Value = "Change:";
                                 dataGridView1.Rows[k].Cells[2].Value = lblChangeDisp.Text;
+                                paid = true;
                             }
 
                         }
@@ -88,6 +89,7 @@ namespace PRG281_Project
                         int i = dataGridView1.Rows.Add();
                         dataGridView1.Rows[i].Cells[1].Value = "Pay method:";
                         dataGridView1.Rows[i].Cells[2].Value = "Master Card";
+                        paid = true;
                         break;
 
                     case 2:
@@ -100,11 +102,15 @@ namespace PRG281_Project
                         int m = dataGridView1.Rows.Add();
                         dataGridView1.Rows[m].Cells[1].Value = "Pay method:";
                         dataGridView1.Rows[m].Cells[2].Value = "Visa Card";
+                        paid = true;
                         break;
                 }
             }
-            Print();
-            Reset();
+            if (paid == true)
+            {
+                Print();
+                Reset();
+            }
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -115,7 +121,6 @@ namespace PRG281_Project
         private void btnPrint_Click(object sender, EventArgs e)
         {
             Print();
-            Reset();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -60,14 +61,15 @@
             this.panel1.Location = new System.Drawing.Point(131, 110);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 166);
+            this.panel1.Size = new System.Drawing.Size(261, 203);
             this.panel1.TabIndex = 1;
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLogin.Location = new System.Drawing.Point(85, 161);
+            this.btnLogin.Location = new System.Drawing.Point(85, 154);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(93, 29);
             this.btnLogin.TabIndex = 2;
@@ -77,12 +79,12 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(31, 93);
+            this.txtPassword.Location = new System.Drawing.Point(35, 111);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(200, 27);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.Size = new System.Drawing.Size(200, 23);
+            this.txtPassword.TabIndex = 1;
             // 
             // label2
             // 
@@ -91,7 +93,7 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(69, 66);
+            this.label2.Location = new System.Drawing.Point(35, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 21);
             this.label2.TabIndex = 2;
@@ -102,16 +104,19 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(35, 51);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(200, 27);
+            this.txtUsername.Size = new System.Drawing.Size(200, 23);
             this.txtUsername.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DimGray;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(35, 25);
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(35, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 23);
+            this.label1.Size = new System.Drawing.Size(85, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "USERNAME:";
             // 
