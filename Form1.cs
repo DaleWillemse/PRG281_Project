@@ -108,12 +108,21 @@ namespace PRG281_Project
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count > 1 && dataGridView1.Rows != null)
+            try
             {
-                int rowIndex = dataGridView1.CurrentCell.RowIndex;
-                dataGridView1.Rows.RemoveAt(rowIndex);
+                if (dataGridView1.Rows.Count > 1 && dataGridView1.Rows != null)
+                {
+                    int rowIndex = dataGridView1.CurrentCell.RowIndex;
+                    total = total - Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells[2].Value);
+                    dataGridView1.Rows.RemoveAt(rowIndex);
+                    lblTotalDisp.Text = "R" + total.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("There are no items in the order.");
+                }
             }
-            else
+            catch
             {
                 MessageBox.Show("There is no item selected.");
             }
@@ -135,6 +144,9 @@ namespace PRG281_Project
                 Amount = amount
             });
 
+            total = total + amount;
+            lblTotalDisp.Text = "R" + total.ToString();
+
             foreach (Items item in itemsList)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -150,8 +162,6 @@ namespace PRG281_Project
                     }
                 }
 
-                total = total + amount;
-                lblTotalDisp.Text = "R" + total.ToString();
 
                 if (found == false)
                 {
