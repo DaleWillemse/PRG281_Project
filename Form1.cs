@@ -36,6 +36,7 @@ namespace PRG281_Project
             total += amount;
             lblTotalDisp.Text = "R" + total.ToString();
 
+            // Loop to place order with many items
             foreach (Items item in itemsList)
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -87,6 +88,7 @@ namespace PRG281_Project
             amtPaid = 0;
         }
 
+        // Exception Handeling for payment
         private void btnPay_Click(object sender, EventArgs e)
         {
             if (cboPayment.Text == "")
@@ -172,6 +174,7 @@ namespace PRG281_Project
             }
         }
 
+        // Button to reset order or start new order
         private void btnReset_Click(object sender, EventArgs e)
         {
             // Here the reset method for reseting the entire order is called.
@@ -184,14 +187,17 @@ namespace PRG281_Project
             e.Graphics.DrawImage(bitmap, 0, 0);
         }
 
+        // Button to show receipt
         private void btnPrint_Click(object sender, EventArgs e)
         {
             // Method that prints whatever is in the dataGridView1 is called to create a receipt for the order.
             Print();
         }
 
+        // Button to remove an item
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            // Exception handeling if user tries to remove item if there are not any items to remove
             try
             {
                 if (dataGridView1.Rows.Count > 1 && dataGridView1.Rows != null)
@@ -213,6 +219,7 @@ namespace PRG281_Project
         }
 
         // Item buttons.
+        // Button to add Appletizer
         private void btnDrinks1_Click(object sender, EventArgs e)
         {
             string name = "Appletizer";
@@ -222,6 +229,7 @@ namespace PRG281_Project
 
         }
 
+        // Button to add Oros Bottle
         private void btnDrinks2_Click(object sender, EventArgs e)
         {
             string name = "Oros Bottle";
@@ -230,6 +238,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Lays/Simba chips
         private void btnSnacks1_Click(object sender, EventArgs e)
         {
             string name = "Lays / Simba";
@@ -238,6 +247,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Doritos/Fritos
         private void btnSnacks2_Click_1(object sender, EventArgs e)
         {
             string name = "Doritos / Fritos";
@@ -245,6 +255,8 @@ namespace PRG281_Project
             int amount = 10;
             AddItem(name, quantity, amount);
         }
+
+        // Button to add Flings/Cheese Curls
         private void btnSnacks3_Click_1(object sender, EventArgs e)
         {
             string name = "Flings / Cheese Curls";
@@ -253,6 +265,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Corn Nibs
         private void btnSnacks4_Click(object sender, EventArgs e)
         {
             string name = "Corn Nibs";
@@ -261,6 +274,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Good Morning Biscuits
         private void btnSnacks5_Click_1(object sender, EventArgs e)
         {
             string name = "Good Morning Biscuits";
@@ -269,6 +283,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Bar One
         private void btnSnacks6_Click_1(object sender, EventArgs e)
         {
             string name = "Bar One 40g";
@@ -277,6 +292,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Cooldrink Bottle
         private void btnDrinks3_Click(object sender, EventArgs e)
         {
             string name = "Cooldrink Bottle";
@@ -285,6 +301,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Jelly Tots
         private void btnSnacks7_Click_1(object sender, EventArgs e)
         {
             string name = "Jelly Tots Big";
@@ -293,6 +310,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Cooldrink Can
         private void btnDrinks4_Click(object sender, EventArgs e)
         {
             string name = "Cooldrink Can";
@@ -300,6 +318,8 @@ namespace PRG281_Project
             int amount = 15;
             AddItem(name, quantity, amount);
         }
+
+        // Button to add 5 Star
         private void btnSnacks8_Click_1(object sender, EventArgs e)
         {
             string name = "5 Star";
@@ -308,6 +328,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Flavoured Water
         private void btnDrinks5_Click(object sender, EventArgs e)
         {
             string name = "Flavoured Water";
@@ -316,6 +337,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Ice Tea (bottle)
         private void btnDrinks6_Click(object sender, EventArgs e)
         {
             string name = "Ice Tea Bottle";
@@ -324,6 +346,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Ice Tea (can)
         private void btnDrinks7_Click(object sender, EventArgs e)
         {
             string name = "Ice Tea Can";
@@ -331,6 +354,8 @@ namespace PRG281_Project
             int amount = 15;
             AddItem(name, quantity, amount);
         }
+        
+        // Button to add Sour Punks
         private void btnSnacks9_Click_1(object sender, EventArgs e)
         {
             string name = "Sour Punks";
@@ -339,6 +364,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Still Water (330ml)
         private void btnDrinks8_Click(object sender, EventArgs e)
         {
             string name = "Still Water 330ml";
@@ -347,6 +373,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Still Water (500ml)
         private void btnDrinks9_Click(object sender, EventArgs e)
         {
             string name = "Still Water 500ml";
@@ -355,6 +382,7 @@ namespace PRG281_Project
             AddItem(name, quantity, amount);
         }
 
+        // Button to add Sparkling Water 
         private void btnDrinks10_Click(object sender, EventArgs e)
         {
             string name = "Sparkling Water 330ml";
@@ -362,6 +390,8 @@ namespace PRG281_Project
             int amount = 15;
             AddItem(name, quantity, amount);
         }
+
+        // Button to add Jelly Sweets Assorted
         private void btnSnacks10_Click_1(object sender, EventArgs e)
         {
             string name = "Jelly Sweets Assorted";
