@@ -32,7 +32,7 @@ namespace PRG281_Project
                 Amount = amount
             });
 
-            total = total + amount;
+            total += amount;
             lblTotalDisp.Text = "R" + total.ToString();
 
             foreach (Items item in itemsList)
@@ -190,7 +190,7 @@ namespace PRG281_Project
                 if (dataGridView1.Rows.Count > 1 && dataGridView1.Rows != null)
                 {
                     int rowIndex = dataGridView1.CurrentCell.RowIndex;
-                    total = total - Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells[2].Value);
+                    total -= Convert.ToInt32(dataGridView1.Rows[rowIndex].Cells[2].Value);
                     dataGridView1.Rows.RemoveAt(rowIndex);
                     lblTotalDisp.Text = "R" + total.ToString();
                 }
