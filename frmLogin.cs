@@ -47,6 +47,7 @@ namespace PRG281_Project
                 }
                 else if (userDetails[txtUsername.Text] == txtPassword.Text)
                 {
+                    // This code hides the current login form and shows the sales form to the user.
                     this.Hide();
                     Form1 f2 = new Form1();
                     f2.ShowDialog();

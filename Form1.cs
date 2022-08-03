@@ -13,6 +13,7 @@ namespace PRG281_Project
 
         public void Form1_Load(object sender, EventArgs e)
         {
+            //Adding items to the combo box.
             cboPayment.Items.Add("Cash");
             cboPayment.Items.Add("Master Card");
             cboPayment.Items.Add("Visa Card");
@@ -99,6 +100,7 @@ namespace PRG281_Project
                 switch (paymethod)
                 {
                     case 0:
+                        // If the user paid in cash, the amount paid by the client is entered and the change the client will received is calculated. 
                         if (txtAmountPaid.Text == "")
                         {
                             MessageBox.Show("Please enter the amount the customer paid");
@@ -115,6 +117,7 @@ namespace PRG281_Project
                             {
                                 int change = amtPaid - total;
                                 lblChangeDisp.Text = "R" + change.ToString();
+                                // Here the total cost and the payment method as well as the change the customer will recieve is added to the dataGridView .
                                 int h = dataGridView1.Rows.Add();
                                 dataGridView1.Rows[h].Cells[1].Value = "Total:";
                                 dataGridView1.Rows[h].Cells[2].Value = "R" + total.ToString();
@@ -137,6 +140,7 @@ namespace PRG281_Project
                         amtPaid = Convert.ToInt32(total);
                         txtAmountPaid.Text = "R" + amtPaid.ToString();
                         lblChangeDisp.Text = "R0.00";
+                        // Here the total cost and the payment method is added to the dataGridView .
                         int n = dataGridView1.Rows.Add();
                         dataGridView1.Rows[n].Cells[1].Value = "Total:";
                         dataGridView1.Rows[n].Cells[2].Value = "R" + total.ToString();
@@ -150,6 +154,7 @@ namespace PRG281_Project
                         amtPaid = Convert.ToInt32(total);
                         txtAmountPaid.Text = "R" + amtPaid.ToString();
                         lblChangeDisp.Text = "R0.00";
+                        // Here the total cost and the payment method is added to the dataGridView .
                         int l = dataGridView1.Rows.Add();
                         dataGridView1.Rows[l].Cells[1].Value = "Total:";
                         dataGridView1.Rows[l].Cells[2].Value = "R" + total.ToString();
@@ -169,6 +174,7 @@ namespace PRG281_Project
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            // Here the reset method for reseting the entire order is called.
             Reset();
         }
 
@@ -180,6 +186,7 @@ namespace PRG281_Project
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+            // Method that prints whatever is in the dataGridView1 is called to create a receipt for the order.
             Print();
         }
 
