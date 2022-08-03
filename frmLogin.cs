@@ -42,31 +42,35 @@ namespace PRG281_Project
             userDetails.Add("Thanos", "Inevitable");
             userDetails.Add("TestUser", "helloworld");
 
-            bool loginSuccess = false;
-            while(loginSuccess == false)
+            try
             {
-                if (userDetails.ContainsKey(txtUsername.Text))
+                if (userDetails.ContainsKey(txtUsername.Text) == false)
                 {
-                    if (userDetails[txtUsername.Text] == txtPassword.Text)
-                    {
-                        this.Hide();
-                        Form1 f2 = new Form1();
-                        f2.ShowDialog();
-                        this.Close();
-                        loginSuccess = true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid password. Please try again.");
-                        break;
-                    } 
+                    throw new Exception();
+                }
+                else if (userDetails[txtUsername.Text] == txtPassword.Text)
+                {
+                    this.Hide();
+                    Form1 f2 = new Form1();
+                    f2.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Invalid Username or Password. \n\nNote: Please ensure that Username and Password is capitalized correctly!");
-                    break;
+                    lblInvalidPass.Visible = true;
+                    lblMessage.Visible = false;
                 }
             }
+            catch
+            {
+                lblMessage.Visible = true;
+                lblInvalidPass.Visible = false;
+            }
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }
